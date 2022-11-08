@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="description" content="Our most popular jackets">
+    <meta name="description" content="RainyDays Project">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Rainy Days | Jackets </title>
-    <link href="../styless.css" rel="stylesheet"/>
+    <title>Rainy Days | Home </title>
+    <link href="styless.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section>
+    <section class="over-bar">
       <i class="fa-solid fa-location-dot"></i>
       <i class="fa-regular fa-user"></i>
       <i class="fa-solid fa-cart-shopping"></i>
@@ -16,18 +16,54 @@
       <i class="fa-solid fa-message"></i> 
     </section>
     <header>
-      <a href="../index.html"><img src="../images/home-cover.jpg" href="../index.html" alt="logo"></a>
-      <nav>
-        <ul>
-          <li>Sale</li>
-          <li>Women</li>
-          <li><a href="men.html">Men</a></li>
-          <li>Kids</li>
-          <li><a href="aboutus.html">About Us</a></li>
-          </ul>
-          <a href="contactus.html"><button>Contact Us</button></a>
-      </nav>
+     <a href="index.html"><img src="images/RainyDays_Logo.png" width="90px" height="50px" alt="logo" class="logo"></a>
+    <nav>
+        <li id="sale">Sale</li>
+        <li id="womens">Women</li>
+        <li id="mens"><a href="men.html">Men</a></li>
+        <li id="kids">Kids</li>
+        <li id="aboutus"><a href="aboutus.html">About Us</a></li>
+<a href="contactus.html"><button class="contact">Contact Us</button></a>
+    </nav>
     </header>
+    <main>
+      <h1 class="men">MEN'S OUTDOOR SPORT JACKETS</h1>
+      <section class="filters">
+        <p>Filter by:</p>
+        <select id="Color" name="Color">
+          <option>Color</option>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+          <option value="green">Green</option>
+          <option value="grey">Grey</option>
+        </select>
+        <select id="Size" name="Size">
+          <option>Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="extralarge">Extra Large</option>
+        </select>
+        <select id="Collection" name="Collection">
+          <option>Collection</option>
+          <option value="summer">Summer</option>
+          <option value="spring">Spring</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
+        </select>
+        <p class="filter2">Sort by:</p>
+        <select id="Sort" name="sort">
+          <option value="popularity">Popularity</option>
+          <option value="price">Price</option>
+</select>
+      </section>
+    </main>
+
+
+
+
+
+
     <footer> 
       <center>
         <section class="icons">
