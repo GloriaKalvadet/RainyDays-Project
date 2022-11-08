@@ -1,0 +1,495 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anton";
+  src: url("fonts/Anton-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(fonts/Archivo-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+@font-face{
+  font-family: "Bebas Neue";
+  src: url(fonts/BebasNeue-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+  margin-left: 40px;
+  margin-top: 5px;
+  align-content: left;
+}
+.over-bar{
+  background-color: lightgrey;
+  color: rgb(100, 99, 99);
+  width: 100%;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  margin-bottom: 8px;
+}
+.fa-location-dot{
+  margin-left: 20px;
+}
+.fa-user{
+  margin-left: 85%;
+}
+a:link{
+  text-decoration: none;
+  color: black;
+}
+header{
+  width: 100%;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  font-weight: 550;
+  vertical-align: top;
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+#sale,
+#womens,
+#mens,
+#kids,
+#aboutus,
+.contact{
+  display: inline-block;
+  padding: 20px;
+  margin-left: 90px;
+}
+#sale:hover,
+#womens:hover,
+#mens:hover,
+#kids:hover,
+#aboutus:hover {
+  text-decoration: underline;
+}
+.contact{
+  background-color: white;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  border: solid;
+  border-color: rgb(188, 186, 186);
+  border-width: 2px;
+  border-radius: 6.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.contact:hover{
+  background-color: rgb(188, 186, 186);
+  color: white;
+}
+h1,
+h2,
+.main,
+#home-cover {
+  font-family: "Anton", Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+h1{
+  font-size: 35px;
+}
+p, .fall {
+  font-size: 20px;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif ;
+}
+.fall {
+  border: none;
+  background-color: white;
+  color: black;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  align-content: center;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.fall:hover{
+  background-color: rgb(14, 71, 85);
+  color: white;
+}
+.group{
+  padding-top: 40px;
+}
+#home-cover {
+  padding-top: 20%;
+  padding-left: 60%;
+  line-height: 18px;
+}
+  .home-cover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-cover.jpg) ;
+  background-size: 100%;
+  min-height: 690px;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+.container{
+  width: 100%;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+#men {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/portrait-young-man-sport-trekking-outfit-standing.jpg) ;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+}
+
+#women {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  min-width: 200px;
+  min-height: 180px;
+display: inline-block;
+margin-left: 90px;
+margin-right: 90px;
+}
+#kid{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/kids-green-forest-playingconcept-kids-vacations-travel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+min-width: 200px;
+min-height: 180px;
+padding: 20px;
+display: inline-block;
+}
+
+
+
+
+
+
+.subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/smiling-couple-walking-with-backpacks-green-hills.jpg);
+  background-size: cover;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  line-height: 1;
+  padding-left: 60px;
+  padding-top: 20%;
+}
+.off {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-left: 15px;
+}
+.signup{
+  color: white;
+}
+.subs{
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  background-color: rgb(14, 71, 85);
+  color: white;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 60px;
+}
+.subs:hover{
+  background-color: rgb(188, 186, 186);
+  color: rgb(14, 71, 85);
+}
+
+
+
+
+.fall-adventures {
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/man-with-backpack-walks-amazing-autumn-forest.jpg);
+background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 600px;
+  margin-left: none;
+  margin-right: none;
+  margin-bottom: 80px;
+}
+.fall-adventures h1 {
+  font-size: 40px;
+}
+.arrivals{
+  margin-left: 55px;
+  border: none;
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.arrivals:hover{
+  background-color: rgb(14, 71, 85);
+  color: white;
+}
+#fall-adventures{
+  padding-top: 20%;
+  margin-left: 60%;
+}
+.container3{
+  width: 100%;
+  height: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+.jackets{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/men-chilling-autumn-forest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 10%;
+  cursor: pointer;
+}
+.shorts {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/tourist-walks-stone\ \(1\).png) ;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+.pants {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/pants.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10%;
+  cursor: pointer;
+}
+.tshirts {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/tshirts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.shoes {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10%;
+  cursor: pointer;
+}
+.accesories {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/accesories.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 180px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+}
+#jackets,
+#shorts,
+#pants,
+#tshirts,
+#shoes,
+#accesories{
+  padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-us{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/aoutus.png) ;
+  background-size: 100%;
+  min-height: 620px;
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+}
+#about-us{
+  padding-top: 30px;
+  margin-left: 60px;
+  font-size: 50px;
+}
+.history{
+  color: black;
+  font-family: "Bebas Neue", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+}
+.history2{
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 60px;
+}
+
+.contactus1{
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+input[type=text], select, textarea{
+  width: 300px;
+  padding: 12px;
+  border: solid 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: top;
+  align-content: top;
+}
+.contact1{
+  margin-left: 110px;
+  margin-bottom: 40px;
+}
+.group1,
+.group2{
+  display: inline-block
+}
+.group1{
+  margin-right: 20%;
+}
+#country{
+  background-color: white;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+#email::placeholder,
+#fname::placeholder,
+#subject::placeholder,
+#message::placeholder{
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type=submit] {
+  background-color: rgb(10, 54, 65);
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+input[type=submit]:hover {
+  background-color: rgb(23, 155, 215);
+}
+a{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+.logo-footer, 
+.icons{
+  padding-top: 10px;
+  padding-left: 40px;
+  float: left;
+  padding-right: 30px;
+}
+.container2 {
+  background: black;
+  width: 100%;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: left;
+}
+.fa-brands fa-facebook, fa-instagram, fa-twitter, fa-youtube{
+  color: white;
+}
+#icons {
+  color: white;
+}
+#services,
+#legal,
+#repair,
+#explore,
+#icons {
+  display: inline-block;
+  text-align: left;
+  align-content: center top;
+  padding-left: 50px;
+  padding-right: 50px;
+  list-style-type: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  vertical-align:top ;
+}
