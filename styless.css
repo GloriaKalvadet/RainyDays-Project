@@ -557,7 +557,7 @@ text-decoration: underline;
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  height: 50%;
+  height: 30%;
 }
 .modal_close{
   position: absolute;
@@ -601,12 +601,12 @@ text-decoration: underline;
   border-radius: 8px;
   color: white;
   font-size: 14px;
-  padding-left: 120px;
-  padding-right: 120px;
+  width: 250px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-top: 20px;
-  margin-left: 120px; 
+  margin: auto;
+  display: flex;
+  justify-content: center; 
   cursor: pointer;
 }
 .bag:hover{
@@ -650,6 +650,128 @@ a:hover img:first-child{
   display: inline-block;
 }
 
+
+.continue-shopping {
+  background-color: white;
+  border: solid 1px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 40%;
+  margin-top: 20px;
+ float: right;
+}
+.continue-shopping:hover{
+  background-color: #0A3641;
+  color: white;
+  border: none;
+}
+
+.shopping1 h3,
+.shopping2 h3{
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.shopping-container{
+display: inline-block;
+}
+.shopping1{
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 30px;
+  margin-top: 60px;
+  min-width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+.shopping2{
+  width: 400px;
+  background-color: rgb(225, 222, 222);
+  padding-top: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.shopping2 p,
+.shopping1 p{
+  font-size: 15px;
+}
+.shopping2 p{
+  display: inline-block;
+}
+.price2{
+  text-align: end;
+  float: inline-end;
+}
+.vat{
+  color: #939292;
+  font-size: 10px;
+}
+.check-out{
+  background-color: #0A3641;
+  color: white;
+  border: none;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  cursor: pointer;
+}
+.check-out:hover{
+  background-color: #128DAC;
+}
+.signin{
+  background-color:#908D8D;
+  color: white;
+  border: none;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+.signin:hover{
+  background-color: #0A3641;
+}
+#country2{
+  width: 90px;
+  background-color: rgb(225, 222, 222);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.payment-icons{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+ margin-bottom: 30px;
+}
 .logo-footer, 
 .icons{
   padding-top: 10px;
