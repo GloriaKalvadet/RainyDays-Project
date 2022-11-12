@@ -772,6 +772,95 @@ display: inline-block;
   margin-left: 10px;
  margin-bottom: 30px;
 }
+
+.group1 h3,
+.group2 h3{
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.checkout{
+  margin-left: 50px;
+}
+.checkout h3{
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+.checkout p{
+  font-size: 15px;
+
+}
+input[type=text2]{
+  width: 200px;
+  padding: 8px;
+  border: solid 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: top;
+  align-content: top;
+}
+input[type=text3]{
+  width: 75px;
+  padding: 8px;
+  border: solid 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: top;
+  align-content: top;
+}
+.summary{
+  background-color:#aaa;
+  color: white;
+  border: none;
+  font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 400px;
+}
+.checkout-proceed{
+display: flex;
+gap: 60px;
+margin-bottom: 50px;
+}
+.summary{
+  height: 350px;
+  width: 350px;
+}
+
+.checkout1,
+.checkout2{
+  float: left;
+}
+.checkout1{
+  margin-right: 30px;
+}
+.product-added1{
+  font-size: 25px;
+  text-align: center;
+}
+.fa-circle-check{
+  color: #128DAC;
+  margin-left: 40%;
+}
+.items1{
+  font-size: 14px;
+  text-align: center;
+
+}
+
+
+
+
 .logo-footer, 
 .icons{
   padding-top: 10px;

@@ -27,42 +27,81 @@
     </nav>
     </header>
     <main>
-      <div class="checkout1">
+    <section class="checkout-proceed">
+      <div class="checkout">
       <h3>Check out</h3>
       <p>Please enter your contact information and select a payment option.</p>
       <form>
-        <section class="group1">
-        <label for="email">Email</label></br>
-       <input type="text" id="email" name="email" placeholder="Your email...">
+      
+        <label for="email2">Email</label></br>
+       <input type="text2" id="email2" name="email2" >
         <p>Have an account? Log in</p>
         <h3>1. Shipping address</h3>
-        <label for="fname">First name</label></br>
-        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        <div class="checkout1"
+        <label for="fname2">First name</label></br>
+        <input type="text2" id="fname2" name="firstname2"></br>
         <label for="lname">Last name</label></br>
-        <input for="lname" id="lname" name="lastname" placeholder="Your last name..."></br>
+        <input type="text2" id="lname" name="lastname"></br>
         <label for="address">Address</label><br>
-        <input for="address" id="address" name="address" placeholder="Your address...">
+        <input type="text2" id="address" name="address"></br></div>
+      
+        <div classs="checkout2">
         <label for="city">City</label><br>
-        <input for="city" id="city" name="city">
+        <input type="text2" id="city" name="city"></br>
         <label for="code">Zip code</label></br>
-        <input for="zipcode" id="zipcode" name="zipcode">
-        <label for="number">Phone number</label>
-        <input for="number" id="number" name="phonenumber">
+        <input type="text2" id="zipcode" name="zipcode"></br>
+        <label for="number">Phone number</label></br>
+        <input type="text2" id="number" name="phonenumber">
+    </div>
+
         <h3>2. Payment</h3>
         <p class="promo">Have a Promo Code or a Gift Card?</p>
-        <p>Please select fromt the payment options below</p>
+        <p>Please select fromt the payment options below</p></br>
         <input type="radio" name="buttons">
-        <label class="radiobuttons"><i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-amex"></i></label></br>
+        <label class="radiobuttons"><i class="fa-brands fa-cc-visa fa-xl"></i>
+          <i class="fa-brands fa-cc-mastercard fa-xl"></i>
+          <i class="fa-brands fa-cc-amex fa-xl"></i></label></br>
           <input type="radio" name="buttons">
-        <label class="radiobuttons"> <i class="fa-brands fa-cc-paypal"></i></label></br>
+        <label class="radiobuttons"> <i class="fa-brands fa-cc-paypal fa-xl"></i></label></br>
         <label for="cardname">Name on card*</label></br>
-        <input for="cardname" id="cardname" name="cardname"></br>
-        <label for="cardnumber">Number on card*</label></br>
-        <input for="cardnumber" id="cardnumber" name="cardnumber">
+        <input type="text2" id="cardname" name="cardname"></br>
+        <label for="cardnumber">Card number*</label></br>
+        <input type="text2" id="cardnumber" name="cardnumber"></br>
+        <label for="date">Expiry date*</label></br>
+        <input type="text2" id="date" name="expirydate"></br>
+        <label for="cvv">CVC/CVV*</label></br>
+        <input type="text3" id="cvv" name="cvv"></br>   
+        <label class="CTA" for="modal-box">Confirm payment</label>
+        </div>
+        <input class="modal-state" id="modal-box" type="checkbox"/>
+        <div class="modal">
+          <label class="modal_buy" for="modal-box"></label>
+          <div class="modal_inner">
+            <label class="modal_close" for="modal-box"></label>
+          <h3 class="product-added1">Thank you for your purchase</h3>
+          <i class="fa-solid fa-circle-check fa-4x"></i>
+          <p class="items1"> You will recieve an email confirmation soon with your order number</p>
+    <a href="index.html">
+    <button class="bag">Continue shopping</button></a>
+        </div>     
+      </div>
+
+        <div class="summary">
+          <h3>Order summary</h3>
+          <p>Subtotal EUR128</p>
+          <p>Satandard delivery Free</p>
+          <hr>
+          <p>Total EUR 128</p>
+          <p>Accepted payment methods</p>
+          <i class="fa-brands fa-cc-visa fa-2xl"></i>
+          <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+          <i class="fa-brands fa-cc-amex fa-2xl"></i>
+          <i class="fa-brands fa-cc-paypal fa-2xl"></i>
+          <p>Return policy</p>
+        </div>
       </section>
-    </div>
+
+    
     </main>
 
 
