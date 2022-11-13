@@ -812,8 +812,8 @@ input[type=text3]{
   align-content: top;
 }
 .summary{
-  background-color:#aaa;
-  color: white;
+  background-color:#ccc;
+  color: black;
   border: none;
   font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
