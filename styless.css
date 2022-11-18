@@ -41,6 +41,13 @@ a:link{
   text-decoration: none;
   color: black;
 }
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 header{
   width: 100%;
   height: 65px;
@@ -52,16 +59,73 @@ header{
   font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
-#sale,
-#womens,
-#mens,
-#kids,
-#aboutus,
-.contact{
-  display: inline-block;
-  padding: 20px;
-  margin-left: 90px;
+.menu{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+.menu > li{
+  margin: 0 4rem;
+  overflow: hidden;
+  padding-top: 15px;
+
+}
+.menu-button-container{
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu1{
+  display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after{
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.menu-button::before{
+  content: '';
+  margin-top: -8px;
+}
+.menu-button::after{
+  content: '';
+  margin-top: 8px;
+}
+#menu1:checked + .menu-button-container .menu-button::before{
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+#menu1:checked + .menu-button-container .menu-button::after{
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+@media(max-width: 800px){
+  .menu-button-container{
+    display: flex;
+  }
+  .menu{
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 #sale:hover,
 #womens:hover,
 #mens:hover,
@@ -74,6 +138,7 @@ header{
   font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   border: solid;
+  margin-top: 5px;
   border-color: rgb(188, 186, 186);
   border-width: 2px;
   border-radius: 6.5px;
@@ -129,17 +194,24 @@ p, .fall {
   .home-cover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-cover.jpg) ;
   background-size: 100%;
-  min-height: 690px;
+  height: 680px;
   background-repeat: no-repeat;
   margin-bottom: 80px;
 }
+@media (max-width: 600px){
+  .home-cover{
+    background-image: url(images/home-cover-small.jpg);
+  }
+}
+
 .container{
   width: 100%;
-  height: 280px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 20px;
+  padding-bottom: 80px;
 }
 #men {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/portrait-young-man-sport-trekking-outfit-standing.jpg) ;
@@ -149,6 +221,7 @@ p, .fall {
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
+  margin-right: 20px;
   
 }
 
@@ -160,8 +233,8 @@ p, .fall {
   min-width: 200px;
   min-height: 180px;
 display: inline-block;
-margin-left: 90px;
-margin-right: 90px;
+margin-right: 20px;
+
 }
 #kid{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/kids-green-forest-playingconcept-kids-vacations-travel.jpg);
@@ -171,6 +244,7 @@ min-width: 200px;
 min-height: 180px;
 padding: 20px;
 display: inline-block;
+margin-right: 20px;
 }
 
 
@@ -186,6 +260,11 @@ display: inline-block;
   line-height: 1;
   padding-left: 60px;
   padding-top: 20%;
+}
+@media (max-width: 600px){
+  .subscribe{
+    background-image: url(images/smiling-couple-small.jpg);
+  }
 }
 .off {
   color: white;
@@ -224,11 +303,16 @@ display: inline-block;
 background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/man-with-backpack-walks-amazing-autumn-forest.jpg);
 background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 600px;
-  margin-left: none;
-  margin-right: none;
+  height: 480px;
   margin-bottom: 80px;
 }
+@media (max-width: 900px){
+  .fall-adventures{
+    background-image: url(images/man-backpack-small.jpg);
+    height: 400px;
+  }
+}
+
 .fall-adventures h1 {
   font-size: 40px;
 }
@@ -254,13 +338,47 @@ background-repeat: no-repeat;
   padding-top: 20%;
   margin-left: 60%;
 }
+@media (max-width: 900px){
+  #fall-adventures{
+  padding-top: 15%;
+  margin-left: 45%;
+  }
+  #fall-adventures h1{
+    font-size: 20px;
+  }
+  .arrivals{
+    margin-left: 25px;
+  border: none;
+  font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: white;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+}
 .container3{
   width: 100%;
-  height: 590px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 20px;
+  display: inline-block;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.container4{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 80px;
 }
 .jackets{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/men-chilling-autumn-forest.jpg);
@@ -271,8 +389,9 @@ background-repeat: no-repeat;
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-left: 10%;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .shorts {
   background-repeat: no-repeat;
@@ -283,9 +402,9 @@ background-repeat: no-repeat;
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-left: 10%;
-  margin-right: 10%;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .pants {
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/pants.jpg);
@@ -296,8 +415,8 @@ background-repeat: no-repeat;
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-right: 10%;
   cursor: pointer;
+  margin-right: 20px;
 }
 .tshirts {
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/tshirts.jpg);
@@ -308,9 +427,9 @@ background-repeat: no-repeat;
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-right: 10%;
-  margin-top: 5%;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .shoes {
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/shoes.jpg);
@@ -321,8 +440,9 @@ background-repeat: no-repeat;
   padding: 20px;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-right: 10%;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 .accesories {
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/accesories.jpg);
@@ -334,6 +454,7 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
   display: inline-block;
   cursor: pointer;
+  margin-right: 20px;
 }
 #jackets,
 #shorts,
@@ -685,7 +806,7 @@ display: inline-block;
 .shopping1{
   background-color: white;
   padding-top: 10px;
-  padding-left: 70px;
+  padding-left: 30px;
   padding-right: 70px;
   border-radius: 30px;
   margin-top: 60px;
@@ -696,11 +817,11 @@ display: inline-block;
   margin-left: 30px;
 }
 .shopping2{
-  width: 400px;
+  width: 300px;
   background-color: rgb(225, 222, 222);
   padding-top: 10px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
   border-radius: 30px;
   margin-top: 60px;
   margin-bottom: 30px;
