@@ -20,8 +20,9 @@ body {
 .logo{
   margin-left: 40px;
   margin-top: 5px;
-  height: 50px;
-  width: 90px;
+  height: 65px;
+  width: 100px;
+  padding-top: 10px;
 }
 .over-bar{
   background-color: lightgrey;
@@ -54,6 +55,7 @@ header{
   font-weight: 550;
   font-family: "Archivo", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+  height: 80px;
 }
 
 .menu-items > li{
@@ -69,6 +71,7 @@ header{
   height: 100%;
   position: fixed;
   overflow: hidden;
+  padding-top: 15px;
 }
 .hamb{
   cursor: pointer;
@@ -175,6 +178,7 @@ h1{
 p, .fall {
   font-size: 20px;
   font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif ;
+  margin-bottom: 10px;
 }
 .fall {
   border: none;
@@ -188,6 +192,7 @@ p, .fall {
   align-content: center;
   margin-left: 25px;
   cursor: pointer;
+  margin-top: 20px;
 }
 .fall:hover{
   background-color: rgb(14, 71, 85);
@@ -205,7 +210,7 @@ p, .fall {
 }
   .home-cover{
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-cover.jpg) ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-cover-small.jpg) ;
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -220,6 +225,7 @@ p, .fall {
 
 .container{
  display: flex;
+ width: 100%;
  justify-content: space-around;
  flex-wrap: wrap;
   text-align: center;
@@ -292,6 +298,7 @@ margin-top: 30px;
 }
 .signup{
   color: white;
+  margin-bottom: 18px;
 }
 .subs{
   font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
@@ -307,6 +314,7 @@ margin-top: 30px;
   cursor: pointer;
   text-align: center;
   margin-left: 60px;
+  margin-top: 15px;
 }
 .subs:hover{
   background-color: rgb(188, 186, 186);
@@ -332,6 +340,7 @@ background-repeat: no-repeat;
 
 .fall-adventures h1 {
   font-size: 40px;
+  margin-bottom: 10px;
 }
 .arrivals{
   margin-left: 55px;
@@ -494,21 +503,16 @@ background-repeat: no-repeat;
 
 
 
-
-
-
-
-
-
-
 .about-us{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/aoutus.png) ;
-  background-size: 100%;
-  min-height: 620px;
+  background-size: cover;
+  height: 90vh;
   filter: grayscale(100%);
   background-repeat: no-repeat;
 }
 #about-us{
+  display: flex;
+  justify-content:baseline;
   padding-top: 30px;
   margin-left: 60px;
   font-size: 50px;
@@ -549,16 +553,17 @@ input[type=text], select, textarea{
   align-content: top;
 }
 .contact1{
-  margin-left: 110px;
   margin-bottom: 40px;
+  display: flex;
+  width: cover;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .group1,
 .group2{
-  display: inline-block
+  width: 400px;
 }
-.group1{
-  margin-right: 20%;
-}
+
 #country{
   background-color: white;
   font-family: "Urbanist", Verdana, Geneva, Tahoma, sans-serif;
@@ -697,7 +702,7 @@ text-decoration: underline;
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  height: 30%;
+  height: fit-content;
 }
 .modal_close{
   position: absolute;
@@ -729,6 +734,8 @@ text-decoration: underline;
 }
 .product-added{
   font-size: 50px;
+  color: black;
+  text-align: center;
 }
 .prices{
   float: inline-end;
@@ -748,6 +755,8 @@ text-decoration: underline;
   display: flex;
   justify-content: center; 
   cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .bag:hover{
   background-color: #128DAC;
@@ -997,44 +1006,40 @@ margin-bottom: 50px;
   text-align: center;
 
 }
-
-
-
-
-.logo-footer, 
-.icons{
-  padding-top: 10px;
-  padding-left: 40px;
-  float: left;
-  padding-right: 30px;
+.container2-1{
+  width: 200px;
 }
-.container2 {
-  background: black;
-  width: 100%;
-  min-height: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.container2-2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+footer{
+  display: flex;
+  background-color: black;
   color: white;
-  text-align: left;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.fa-brands fa-facebook, fa-instagram, fa-twitter, fa-youtube{
-  color: white;
+.logo-footer{
+  height: 65px;
+  width: 100px;
+  left: 0;
 }
-#icons {
-  color: white;
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#services,
-#legal,
-#repair,
-#explore,
-#icons {
-  display: inline-block;
-  text-align: left;
-  align-content: center top;
-  padding-left: 50px;
-  padding-right: 50px;
-  list-style-type: none;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  vertical-align:top ;
+
+.cart {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
 }

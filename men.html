@@ -19,13 +19,6 @@
 </script>
   </head>
   <body>
-    <div class="over-bar">
-      <i class="fa-solid fa-location-dot"></i>
-      <i class="fa-regular fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-globe"></i>      
-      <i class="fa-solid fa-message"></i> 
-    </div>
     <header>
       <a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo" class="logo"></a>
      
@@ -47,27 +40,59 @@
   <section class="fall-adventures">
     <div id="fall-adventures">
       <h1>FALL ADVENTURES</h1>
-      <button class="arrivals">NEW ARRIVALS</button>
+      <label class="arrivals" for="modal-box">NEW ARRIVALS</label>
+      <input class="modal-state" id="modal-box" type="checkbox"/>
+
+        <div class="modal">
+          <label class="modal_buy" for="modal-box"></label>
+          <div class="modal_inner">
+            <label class="modal_close" for="modal-box"></label>
+          <h3 class="product-added">Coming Soon</h3>
+          <hr>
+    <a href="index.html">
+    <button class="bag">Go to Home Page</button></a>
+        </div>
+        </div>
+      </div>
+
     </div>
   </section>
   <section class="container3">
     <a href="jackets.html"> <div class="jackets">
       <h2 id="jackets">JACKETS</h2>
     </div></a>
-    <div class="shorts">
+    <label  for="modal-box"><div class="shorts">
       <h2 id="shorts">SHORTS</h2>
-    </div>
-    <div class="pants">
+    </div></label>
+    <input class="modal-state" id="modal-box" type="checkbox"/>
+
+        <div class="modal">
+          <label class="modal_buy" for="modal-box"></label>
+          <div class="modal_inner">
+            <label class="modal_close" for="modal-box"></label>
+          <h3 class="product-added">Coming Soon</h3>
+          <hr>
+    <a href="index.html">
+    <button class="bag">Go to Home Page</button></a>
+        </div>
+        </div>
+
+        <label  for="modal-box"><div class="pants">
       <h2 id="pants">PANTS</h2>
-    </div></section>
+    </div> </label></section>
     <section class="container4">
+      <label  for="modal-box">
     <div class="tshirts">
       <h2 id="tshirts">T-SHIRTS</h2>
-    </div>
-    <div class="shoes">
+    </div></label>
+
+
+    <label  for="modal-box"><div class="shoes">
       <h2 id="shoes">SHOES</h2>
     </div>
-    <div class="accesories">
+
+
+    <label  for="modal-box"><div class="accesories">
       <h2 id="accesories">ACCESORIES</h2>
     </div>
   </section>
@@ -77,19 +102,18 @@
 
 
 <footer> 
-  <center>
-    <section class="icons">
-      <a href="index.html"><img class="logo-footer" src="images/RainyDaysWhite.png" height="60px" width="90px" alt="logo"></a>
+    <div class="container2-1">
+      <a href="index.html"><img class="logo-footer" src="images/RainyDaysWhite.png" alt="logo"></a>
       <br>
 <section id="icons">
   <i class="fa-brands fa-facebook"></i>
   <i class="fa-brands fa-instagram"></i>
   <i class="fa-brands fa-twitter"></i>
   <i class="fa-brands fa-youtube"></i>
-</center>
 </section>
+</div>
   <nav>
-    <div class="container2">
+    <div class="container2-2">
     <section id="services">
       <h3>Our services</h3>
       <li>FAQ</li>
@@ -122,21 +146,6 @@
   </nav>
 </footer>
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

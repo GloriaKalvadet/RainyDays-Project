@@ -6,7 +6,7 @@
     <title>Rainy Days | Home </title>
     <link href="styless.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for my site -->
+    <script src="script.js"></script>
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -19,15 +19,8 @@
 </script>
   </head>
   <body>
-    <div class="over-bar">
-      <i class="fa-solid fa-location-dot"></i>
-      <i class="fa-regular fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-globe"></i>      
-      <i class="fa-solid fa-message"></i> 
-    </div>
     <header>
-      <a href="index.html"><img src="images/RainyDays_Logo.png" alt="logo" class="logo"></a>
+      <a href="index.html"><img src="images/RainyDays_Logo.png" loading="eager" alt="logo" class="logo"></a>
      
       <nav class="navbar">
        <ul class="menu-items">
@@ -74,9 +67,16 @@
           <option value="price">Price</option>
 </select>
       </section>
+
+      <div class="products">
+      </div>
+      
+      <div class="cart">
+      </div>
+      
       <section class="product-list">
         <div class="products">
-          <img src="images/RainyDays_Jacket3.png" alt="red-jacket">
+          <img src="images/RainyDays_Jacket3.png" loading="eager" alt="red-jacket">
         </br>
           <h3 class="jackets-name">Men's Sweater Weather</h3>
     
@@ -87,7 +87,7 @@
         </div>
 
         <div class="products">
-          <img src="images/RainyDays_Jacket4.png" alt="black-jacket">
+          <img src="images/RainyDays_Jacket4.png" loading="eager" alt="black-jacket">
         </br>
         <h3 class="jackets-name">Men's Sweater Weather</h3>
   
@@ -98,7 +98,7 @@
         </div>
 
         <div class="products">
-          <img src="images/RainyDays_Jacket5.png" alt="grey-jacket">
+          <img src="images/RainyDays_Jacket5.png" loading="eager" alt="grey-jacket">
         </br>
         <h3 class="jackets-name">Men's Sweater Weather</h3>
   
@@ -109,7 +109,7 @@
         </div>
 
         <div class="products"> 
-        <img src="images/RainyDays_Jacket6.png" alt="blackgrey-jacket">
+        <img src="images/RainyDays_Jacket6.png" loading="eager" alt="blackgrey-jacket">
       </br>
       <h3 class="jackets-name">Men's Sweater Weather</h3>
 
@@ -145,8 +145,8 @@
 
         <div class="products">
           <a>
-          <img src="images/RainyDays_Jacket7.png" class="green" alt="green-jacket">
-          <img src="images/Screenshot_2022-09-18_at_20.42.36-removebg-preview.png" alt="man-wearing-jacket">
+          <img src="images/RainyDays_Jacket7.png" loading="eager" class="green" alt="green-jacket">
+          <img src="images/Screenshot_2022-09-18_at_20.42.36-removebg-preview.png" loading="eager" alt="man-wearing-jacket">
         </a>
       </br>
         <h3 class="jackets-name">Men's Sweater Weather</h3>
@@ -158,7 +158,7 @@
         </div>
 
         <div class="products">
-          <img src="images/RainyDays_Jacket1.png" alt="orange-jacket">
+          <img src="images/RainyDays_Jacket1.png" loading="eager" alt="orange-jacket">
         </br>
         <h3 class="jackets-name">Men's Sweater Weather</h3>
   
@@ -176,50 +176,49 @@
 
 
     <footer> 
-      <center>
-        <section class="icons">
-          <a href="index.html"><img class="logo-footer" src="images/RainyDaysWhite.png" height="60px" width="90px" alt="logo"></a>
-          <br>
-    <section id="icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </center>
-    </section>
-      <nav>
-        <div class="container2">
-        <section id="services">
-          <h3>Our services</h3>
-          <li>FAQ</li>
-          <li>Shipping</li>
-          <li>Track your order</li>
-          <li>Size guiding</li>
-          <li>Find a store</li>
-        </section>
-        <section id="legal">
-        <h3>Legal</h3>
-          <li>Terms & conditions</li>
-          <li>Cookie preferences</li>
-          <li>Privacy</li>
-        </section>
-        <section id="repair">
-        <h3>Repair and care</h3>
-          <li>Repair</li>
-          <li>Warranty</li>
-          <li>Product care</li>
-        </section>
-        <section id="explore">
-        <h3>Explore</h3>
-          <li>Events</li>
-          <li>Student discount</li>
-          <li>Military discount</li>
-          <li>Health Care Worker discount</li>
-          <li>First Responder discount</li>
-        </div>
-        </section>
-      </nav>
-    </footer>
+      <div class="container2-1">
+        <a href="index.html"><img class="logo-footer" src="images/RainyDaysWhite.png" alt="logo"></a>
+        <br>
+  <section id="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </section>
+  </div>
+    <nav>
+      <div class="container2-2">
+      <section id="services">
+        <h3>Our services</h3>
+        <li>FAQ</li>
+        <li>Shipping</li>
+        <li>Track your order</li>
+        <li>Size guiding</li>
+        <li>Find a store</li>
+      </section>
+      <section id="legal">
+      <h3>Legal</h3>
+        <li>Terms & conditions</li>
+        <li>Cookie preferences</li>
+        <li>Privacy</li>
+      </section>
+      <section id="repair">
+      <h3>Repair and care</h3>
+        <li>Repair</li>
+        <li>Warranty</li>
+        <li>Product care</li>
+      </section>
+      <section id="explore">
+      <h3>Explore</h3>
+        <li>Events</li>
+        <li>Student discount</li>
+        <li>Military discount</li>
+        <li>Health Care Worker discount</li>
+        <li>First Responder discount</li>
+      </div>
+      </section>
+    </nav>
+  </footer>
   </body>
 
 
