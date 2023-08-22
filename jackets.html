@@ -3,10 +3,11 @@
   <head>
     <meta name="description" content="RainyDays Project">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Rainy Days | Home </title>
+    <title>Rainy Days | Products </title>
     <link href="styless.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="jackets.js"></script>
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -143,19 +144,45 @@
 
         </div>
 
+        
         <div class="products">
           <a>
           <img src="images/RainyDays_Jacket7.png" loading="eager" class="green" alt="green-jacket">
           <img src="images/Screenshot_2022-09-18_at_20.42.36-removebg-preview.png" loading="eager" alt="man-wearing-jacket">
         </a>
       </br>
-        <h3 class="jackets-name">Men's Sweater Weather</h3>
+      <h2>FEATURED</h2>
+        <h3 class="jackets-name">
+          Men's Sweater Weather</h3>
   
         <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
       </br>
-        <p class="price">EUR 128</p>
-        <button class="CTA">Quick buy</button>
+      <p class="price">EUR 128</p>
+      <label class="CTA" for="modal-box">Quick buy</label>
         </div>
+        <input class="modal-state" id="modal-box" type="checkbox"/>
+        <div class="modal">
+          <label class="modal_buy" for="modal-box"></label>
+          <div class="modal_inner">
+            <label class="modal_close" for="modal-box"></label>
+          <h3 class="product-added">Product added to the bag</h3>
+          <hr>
+          <p class="items"> You have one item in the bag</p>
+        <hr>
+        <p class="items">Sub total</p>
+        <p class="prices">EUR128</p>
+      <hr>
+      <p class="items">Total</p>
+      <p class="prices" >EUR128</p>
+    <hr>
+    <a href="shoppingbag.html">
+    <button class="bag">Go to bag</button></a>
+        </div>
+        </div>
+
+
+
+        
 
         <div class="products">
           <img src="images/RainyDays_Jacket1.png" loading="eager" alt="orange-jacket">

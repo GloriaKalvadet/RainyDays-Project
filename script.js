@@ -93,3 +93,27 @@ function addToCart(product) {
   const existingItem = cart.items.find(function(item) {
     return item.name === product.name && item.size === item.size;
   });}
+
+
+
+
+  fetch('https://rainy-days.casa/wp-json/wp/v2/products')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); 
+  });
+
+
+  fetch('https://rainy-days.casa/wp-json/wp/v2/products')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('The network response was wrong');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data); // or do something else with the data
+  })
+  .catch(error => {
+    console.error('There was a problem with the API request:', error);
+  });
