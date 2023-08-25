@@ -3,11 +3,12 @@
   <head>
     <meta name="description" content="RainyDays Project">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Rainy Days | Products </title>
+    <title>Rainy Days | Home </title>
     <link href="styless.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="jackets.js"></script>
+    <!-- <script src="script.js"></script> -->
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -75,132 +76,97 @@
       <div class="cart">
       </div>
       
-      <section class="product-list">
-        <div class="products">
-          <img src="images/RainyDays_Jacket3.png" loading="eager" alt="red-jacket">
-        </br>
-          <h3 class="jackets-name">Men's Sweater Weather</h3>
-    
-          <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-        </br>
-          <p class="price">EUR 128</p> 
-          <button class="CTA">Quick buy</button>
-        </div>
+      <section class="product-list" id="products-container">
 
-        <div class="products">
-          <img src="images/RainyDays_Jacket4.png" loading="eager" alt="black-jacket">
-        </br>
-        <h3 class="jackets-name">Men's Sweater Weather</h3>
-  
-        <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-      </br>
-        <p class="price">EUR 128</p>
-        <button class="CTA">Quick buy</button>
-        </div>
-
-        <div class="products">
-          <img src="images/RainyDays_Jacket5.png" loading="eager" alt="grey-jacket">
-        </br>
-        <h3 class="jackets-name">Men's Sweater Weather</h3>
-  
-        <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-      </br>
-        <p class="price">EUR 128</p>
-        <button class="CTA">Quick buy</button>
-        </div>
-
-        <div class="products"> 
-        <img src="images/RainyDays_Jacket6.png" loading="eager" alt="blackgrey-jacket">
-      </br>
-      <h3 class="jackets-name">Men's Sweater Weather</h3>
-
-      <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-    </br>
-    <div>
-      <p class="price">EUR 128</p>
-      <label class="CTA" for="modal-box">Quick buy</label>
-        </div>
-        <input class="modal-state" id="modal-box" type="checkbox"/>
-        <div class="modal">
-          <label class="modal_buy" for="modal-box"></label>
-          <div class="modal_inner">
-            <label class="modal_close" for="modal-box"></label>
-          <h3 class="product-added">Product added to the bag</h3>
-          <hr>
-          <p class="items"> You have one item in the bag</p>
-        <hr>
-        <p class="items">Sub total</p>
-        <p class="prices">EUR128</p>
-      <hr>
-      <p class="items">Total</p>
-      <p class="prices" >EUR128</p>
-    <hr>
-    <a href="shoppingbag.html">
-    <button class="bag">Go to bag</button></a>
-        </div>
-        </div>
-
-
-
-        </div>
-
+        <script>
+          var settings = {
+          "url": "https://www.rainydays.boutique/wp-json/wc/v3/products",
+          "method": "GET",
+          "timeout": 0,
+          "headers": {
+            "Authorization": "Basic Y2tfNTk1ZWRiYTI0MzUwZjZiNDlkNWQ2MThjOTE5MGE5Yjk5NjA1MTA4Yzpjc180NWUwMTQ2ZjY2NTI4NDNkMWVhYmRiNjZmNzk4Zjc1Y2NjN2QxNTRm"
+          },
+        };
         
-        <div class="products">
-          <a>
-          <img src="images/RainyDays_Jacket7.png" loading="eager" class="green" alt="green-jacket">
-          <img src="images/Screenshot_2022-09-18_at_20.42.36-removebg-preview.png" loading="eager" alt="man-wearing-jacket">
-        </a>
-      </br>
-      <h2>FEATURED</h2>
-        <h3 class="jackets-name">
-          Men's Sweater Weather</h3>
-  
-        <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-      </br>
-      <p class="price">EUR 128</p>
-      <label class="CTA" for="modal-box">Quick buy</label>
-        </div>
-        <input class="modal-state" id="modal-box" type="checkbox"/>
-        <div class="modal">
-          <label class="modal_buy" for="modal-box"></label>
-          <div class="modal_inner">
-            <label class="modal_close" for="modal-box"></label>
-          <h3 class="product-added">Product added to the bag</h3>
-          <hr>
-          <p class="items"> You have one item in the bag</p>
-        <hr>
-        <p class="items">Sub total</p>
-        <p class="prices">EUR128</p>
-      <hr>
-      <p class="items">Total</p>
-      <p class="prices" >EUR128</p>
-    <hr>
-    <a href="shoppingbag.html">
-    <button class="bag">Go to bag</button></a>
-        </div>
-        </div>
-
-
-
+        jQuery.ajax(settings).done(function (response) {
+          console.log(response); 
+          displayProducts(response); 
+        });
         
+        function displayProducts(products) {
+          var productsContainer = document.getElementById('products-container'); 
+        
+          
+          for (var i = 0; i < products.length; i++) {
+            var product = products[i];
+            
+            
+            var productCard = document.createElement('div');
+            productCard.className = 'products';
+            productCard.setAttribute("id", "prodcut"+product.id);
+            
+            if (product.images.length > 0) {
+              var imageElement = document.createElement('img');
+              var br = document.createElement('br');
+              var h3 = document.createElement('h3');
+              var h3_size_one = document.createElement('h3');
+              var h3_size_two = document.createElement('h3');
+              var h3_size_three = document.createElement('h3');
+              var h3_size_fr = document.createElement('h3');
+              var h3_size_fv = document.createElement('h3');
+              var brtwo = document.createElement('br');
+              var p = document.createElement('p');
+              var button = document.createElement('button');
 
-        <div class="products">
-          <img src="images/RainyDays_Jacket1.png" loading="eager" alt="orange-jacket">
-        </br>
-        <h3 class="jackets-name">Men's Sweater Weather</h3>
-  
-        <h3 class="sizes">XS</h3> <h3 class="sizes">S</h3><h3 class="sizes"> M</h3><h3 class="sizes"> L </h3><h3 class="sizes">XL</h3>
-      </br>
-        <p class="price">EUR 128</p>
-        <button class="CTA">Quick buy</button>
-        </div>
+              var anchor = document.createElement("a");                        
+                anchor.href = "single_product.html?id="+product.id;
+              anchor.innerText = "Quick buy";
+
+              h3.className = 'jackets-name';
+              h3.textContent = product.name;
+              h3_size_one.className = 'sizes';
+              h3_size_one.textContent = 'XS';
+              h3_size_two.className = 'sizes';
+              h3_size_two.textContent = 'S';
+              h3_size_three.className = 'sizes';
+              h3_size_three.textContent = 'M';
+              h3_size_fr.className = 'sizes';
+              h3_size_fr.textContent = 'L';
+              h3_size_fv.className = 'sizes';
+              h3_size_fv.textContent = 'XL';
+              p.className = 'price';
+              p.textContent = 'EUR ' +product.price;
+
+              button.className = 'CTA';
+              // button.textContent = 'Quick buy';
+              
+
+              imageElement.src = product.images[0].src; 
+              productCard.appendChild(imageElement);
+              productCard.appendChild(br);
+              productCard.appendChild(h3);
+              productCard.appendChild(h3_size_one);
+              productCard.appendChild(h3_size_two);
+              productCard.appendChild(h3_size_three);
+              productCard.appendChild(h3_size_fr);
+              productCard.appendChild(h3_size_fv);
+              productCard.appendChild(brtwo);
+              productCard.appendChild(p);
+              productCard.appendChild(button);
+
+              button.appendChild(anchor);
+              
+            }
+            productsContainer.appendChild(productCard);
+          }
+        }
+        
+        </script>
+
+
+
       </section>
     </main>
-
-
-
-
-
 
     <footer> 
       <div class="container2-1">
@@ -248,32 +214,5 @@
   </footer>
   </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 </html>
