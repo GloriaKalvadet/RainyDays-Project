@@ -1,0 +1,413 @@
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Single Product Page</title>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+        <link href="styless.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+background-color: #eee;
+font-family: "Poppins", sans-serif
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+background-color: #fff;
+padding: 14px;
+border: none
+}
+#lightSlider li{}
+
+.demo {
+width: 100%
+}
+
+ul {
+list-style: none outside none;
+padding-left: 0;
+margin-bottom: 0
+}
+
+li {
+display: block;
+float: left;
+margin-right: 6px;
+cursor: pointer
+}
+
+img {
+display: block;
+height: auto;
+width: 100%
+}
+
+.stars i {
+color: #f6d151
+}
+
+.stars span {
+font-size: 13px
+}
+
+hr {
+color: #d4d4d4
+}
+
+.badge {
+padding: 5px !important;
+padding-bottom: 6px !important
+}
+
+.badge i {
+font-size: 10px
+}
+
+.profile-image {
+width: 35px
+}
+
+.comment-ratings i {
+font-size: 13px
+}
+
+.username {
+font-size: 12px
+}
+
+.comment-profile {
+line-height: 17px
+}
+
+.date span {
+font-size: 12px
+}
+
+.p-ratings i {
+color: #f6d151;
+font-size: 12px
+}
+
+.btn-long {
+padding-left: 35px;
+padding-right: 35px
+}
+
+.buttons {
+margin-top: 15px
+}
+
+.buttons .btn {
+height: 46px
+}
+
+.buttons .cart {
+border-color: #ff7676;
+color: #ff7676
+}
+
+.buttons .cart:hover {
+background-color: #e86464 !important;
+color: #fff
+}
+
+.buttons .buy {
+color: #fff;
+background-color: #ff7676;
+border-color: #ff7676
+}
+
+.buttons .buy:focus,
+.buy:active {
+color: #fff;
+background-color: #ff7676;
+border-color: #ff7676;
+box-shadow: none
+}
+
+.buttons .buy:hover {
+color: #fff;
+background-color: #e86464;
+border-color: #e86464
+}
+
+.buttons .wishlist {
+background-color: #fff;
+border-color: #ff7676
+}
+
+.buttons .wishlist:hover {
+background-color: #e86464;
+border-color: #e86464;
+color: #fff
+}
+
+.buttons .wishlist:hover i {
+color: #fff
+}
+
+.buttons .wishlist i {
+color: #ff7676
+}
+
+.comment-ratings i {
+color: #f6d151
+}
+
+.followers {
+font-size: 9px;
+color: #d6d4d4
+}
+
+.store-image {
+width: 42px
+}
+
+.dot {
+height: 10px;
+width: 10px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+margin-right: 5px
+}
+
+.bullet-text {
+font-size: 12px
+}
+
+.my-color {
+margin-top: 10px;
+margin-bottom: 10px
+}
+
+label.radio {
+cursor: pointer
+}
+
+label.radio input {
+position: absolute;
+top: 0;
+left: 0;
+visibility: hidden;
+pointer-events: none
+}
+
+label.radio span {
+border: 2px solid #8f37aa;
+display: inline-block;
+color: #8f37aa;
+border-radius: 50%;
+width: 25px;
+height: 25px;
+text-transform: uppercase;
+transition: 0.5s all
+}
+
+label.radio .red {
+background-color: red;
+border-color: red
+}
+
+label.radio .blue {
+background-color: blue;
+border-color: blue
+}
+
+label.radio .green {
+background-color: green;
+border-color: green
+}
+
+label.radio .orange {
+background-color: orange;
+border-color: orange
+}
+
+label.radio input:checked+span {
+color: #fff;
+position: relative
+}
+
+label.radio input:checked+span::before {
+opacity: 1;
+content: '\2713';
+position: absolute;
+font-size: 13px;
+font-weight: bold;
+left: 4px
+}
+
+.card-body {
+padding: 0.3rem 0.3rem 0.2rem
+}
+#single_product_page .width_set_single{
+max-width:1440px;
+}
+.card_detail_color{
+background: #fff;
+}
+footer nav{
+    width: 50%;
+}
+.container2-2 {
+    flex-wrap: unset;
+}
+@media(max-width:1440px){
+#single_product_page .width_set_single{
+max-width:100%;
+}
+}
+@media(max-width: 768px){
+.remove_padding{
+padding: 0 !important;
+}
+}
+</style>
+</head>
+<header>
+<a href="index.html"><img src="images/RainyDays_Logo.png" loading="eager" alt="logo" class="logo"></a>
+
+<nav class="navbar">
+<ul class="menu-items">
+<li id="sale">Sale</li>
+<li id="womens">Women</li>
+<li id="mens"><a href="men.html">Men</a></li>
+<li id="kids">Kids</li>
+<li id="aboutus"><a href="aboutus.html">About Us</a></li>
+
+<a href="contactus.html"><button class="contact">Contact Us</button></a>
+</ul>
+<input class="side-menu" type="checkbox" id="side-menu">
+<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+</nav>
+</header>
+
+<div id="single_product_page">
+
+    <script>
+        // let url = new URL(url_str);
+        var url = (window.location).href;
+        // console.log((window.location).href);
+
+        var id = url.substring(url.lastIndexOf('=') + 1);
+        // console.log(id);
+
+        var settings = {
+        "url": "https://www.rainydays.boutique/wp-json/wc/v3/products/"+id,
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+          "Authorization": "Basic Y2tfNTk1ZWRiYTI0MzUwZjZiNDlkNWQ2MThjOTE5MGE5Yjk5NjA1MTA4Yzpjc180NWUwMTQ2ZjY2NTI4NDNkMWVhYmRiNjZmNzk4Zjc1Y2NjN2QxNTRm"
+        },
+      };
+      
+      jQuery.ajax(settings).done(function (response) {
+        console.log(response); 
+        id = response.id;
+        pro_name = response.name;
+        price = response.price;
+        images = response.images[0].src;
+        description = response.description;
+        
+        jQuery('.ctm_title').text(pro_name);
+        jQuery('.ctm-price').text('EUR '+price);
+        jQuery('ul#lightSlider img').attr('src',images );
+        jQuery('.description').text(description);
+        
+        
+        
+        // displayProducts(response); 
+      });
+      </script>
+
+<div class="container-fluid mt-2 mb-3 width_set_single">
+<div class="row no-gutters">
+<div class="col-md-5 pr-2 remove_padding">
+<div class="card">
+<div class="demo">
+<ul id="lightSlider">
+<img src="" />
+</ul>
+</div>
+</div>
+</div> 
+<div class="col-md-7 card_detail_color">
+<div class="card">
+<div class="about"> <span class="font-weight-bold ctm_title"> </span>
+<h4 class="font-weight-bold ctm-price"></h4>
+</div>
+<div class="buttons"> <button class="btn btn-outline-warning btn-long cart">Add to Cart</button> <button class="btn btn-warning btn-long buy">Buy it Now</button>  </div>
+<hr>
+<div class="product-description">
+<div class="mt-2"> <span class="font-weight-bold">Description</span>
+<div class="description"></div>
+<div class="bullets">
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Best in Quality</span> </div>
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Anti-creak joinery</span> </div>
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Sturdy laminate surfaces</span> </div>
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Relocation friendly design</span> </div>
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">High gloss, high style</span> </div>
+    <div class="d-flex align-items-center"> <span class="dot"></span> <span class="bullet-text">Easy-access hydraulic storage</span> </div>
+</div>
+</div>
+</div>
+</div>     
+</div>
+</div>
+</div>
+</div>
+<footer> 
+<div class="container2-1">
+<a href="index.html"><img class="logo-footer" src="images/RainyDaysWhite.png" alt="logo"></a>
+<br>
+<section id="icons">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+</section>
+</div>
+<nav>
+<div class="container2-2">
+<section id="services">
+<h3>Our services</h3>
+<li>FAQ</li>
+<li>Shipping</li>
+<li>Track your order</li>
+<li>Size guiding</li>
+<li>Find a store</li>
+</section>
+<section id="legal">
+<h3>Legal</h3>
+<li>Terms & conditions</li>
+<li>Cookie preferences</li>
+<li>Privacy</li>
+</section>
+<section id="repair">
+<h3>Repair and care</h3>
+<li>Repair</li>
+<li>Warranty</li>
+<li>Product care</li>
+</section>
+<section id="explore">
+<h3>Explore</h3>
+<li>Events</li>
+<li>Student discount</li>
+<li>Military discount</li>
+<li>Health Care Worker discount</li>
+<li>First Responder discount</li>
+</div>
+</section>
+</nav>
+</footer>
+</body>
+</html>
